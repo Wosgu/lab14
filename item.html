@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>eBiz</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,500&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary fs-2" href="index.html">eBiz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse me-auto navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Каталог
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Смартфоны</a></li>
+            <li><a class="dropdown-item" href="#">Ноутбуки</a></li>
+            <li><a class="dropdown-item" href="#">Компьютеры</a></li>
+            <li><a class="dropdown-item" href="#">Периферия</a></li>
+            <li><a class="dropdown-item" href="#">Для рабочего места</a></li>
+            <li><a class="dropdown-item" href="#">Аксесуары</a></li>
+            <li><a class="dropdown-item" href="index_search.html">Комплектующие</a></li>
+              
+          </ul>
+        </li>
+        </ul>
+          <ul class="navbar-nav pe-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link hh" href="#"><i class="fa-solid fa-dolly fa-2xl"></i></a>
+        </li>
+                  <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-regular fa-heart fa-2xl"></i></a>
+        </li>
+                  <li class="nav-item">
+        <a class="nav-link" href="basket.html">
+            <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+            <span id="cartItemCount" class="cart-item-count">0</span>
+        </a>
+                  </li>
+                  <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-regular fa-user fa-2xl"></i></a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+        </header>
+        
+        
+        
+        
+        
+        
+        
+        <div class="container ots">
+            <div class="row">
+                <div class="col-1"><a href="#">Назад</a></div>
+                <div class="col-3"><a href="index.html">Главная</a> / <a href="index_search.html">Комплектующие</a> / <a href="">Товар</a></div><br>
+        </div>
+            <div class="dd">
+            <div class="row ots-1">
+                <div class="col-2">
+                    <div class="row"><img id="image1" src="https://avatars.mds.yandex.net/get-mpic/5129282/img_id2733454934950179302.jpeg/600x800" onmouseover="updateImage(this.src)"></div>
+                    <div class="row"><img id="image2" src="https://avatars.mds.yandex.net/get-mpic/5111824/img_id7636912709293626721.jpeg/600x800" onmouseover="updateImage(this.src)"></div>
+                    <div class="row"><img id="image3" src="https://avatars.mds.yandex.net/get-mpic/1923922/img_id6069760638862999117.jpeg/600x800" onmouseover="updateImage(this.src)"></div>
+                </div>
+                <div class="col-4"><img id="mainImage" src="https://avatars.mds.yandex.net/get-mpic/5129282/img_id2733454934950179302.jpeg/600x800"></div>
+                <div class="col-3">
+                    <div class="row name"><h4>Солнцезащитные очки</h4></div>
+                    <div class="row"><h5>Коротко о товаре</h5></div>
+                    <div class="row">
+                        
+                        <h6>Характеристика <br>Характеристика <br>Характеристика <br>
+                        Характеристика <br>Характеристика <br>Характеристика <br>
+                        Характеристика <br>Характеристика <br>Характеристика <br></h6>
+                        
+                    </div>
+                </div>
+                <div class="col-3 tw">
+                    <h1>Цена</h1>
+                    <p>99$</p>
+                    <p>курьером завтра</p>
+                    <p>в пункт выдачи завтра, бесплатно</p>
+                    <button id="addToCartButton">В корзину</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"><h1>Описание</h1></div>
+                <div class="col-12">
+                    <p>
+                        Прикольные солнечные очки с пикселями - отличный выбор для всех фанатов игры Майнкрафт! Такой аксессуар понравится как детям, так и взрослым - девочки и мальчики, а также женщины и мужчины будут в восторге от него! Пиксельные прямоугольные очки выполнены из легкого и безопасного пластика. Они не натирают переносицу и очень комфортны в носке, поэтому подойдут не только как мужские и женские, но и как детские для подростков. Такие защитные аксессуары станут полезным приобретением на лето. Темные линзы обеспечат защиту ваших глаз от яркого света солнца и УФ излучения, сохраняя качество зрения. Они обладают повышенной устойчивостью к царапинам и прочностью за счет износостойкого материала - поликарбоната. Оправа очков позволяет изделиям не спадать во время ходьбы и не травмирует кожу, крепко удерживая очки за ухом. Стильные фигурные украшения пригодятся вам не только для летней прогулки - также они станут прекрасным дополнением модного пляжного образа, наряда на фотосессию, карнавальную вечеринку или дискотеку. Узкие очки станут настоящим хитом 2023 года и трендовым имиджевым украшением для крутых и необычных молодежных образов. Приобретайте этот классный аксессуар и создавайте свой собственный имидж!
+                    </p>
+                </div>
+            </div>
+        </div>  
+            </div>
+        
+
+        <style>.ots{
+                margin-top: 5%;
+                }
+            .ots-1{
+                margin-top: 3%;
+            }
+            .col-2 img {
+                max-width: 100%;  /* Растягиваем изображение по ширине блока */
+                height: auto;    /* Сохраняем пропорции изображения */
+                width: 100%;      /* Занимаем 100% ширины блока */
+            }
+
+            .col-4 img {
+                max-width: 100%;
+                height: auto;
+                width: 100%;
+            }
+            
+            .col-2 img {
+                max-width: 100%;
+                height: auto;
+                width: 100%;
+                border: 1px solid #ccc; /* Серая рамка для всех изображений */
+                cursor: pointer; /* Добавляем указатель при наведении курсора */
+            }
+
+            .col-2 img:hover {
+                border-color: #007bff; /* Изменяем цвет рамки при наведении для всех изображений */
+            }
+
+            .col-4 img {
+                max-width: 100%;
+                height: auto;
+                width: 100%;
+            }
+            
+            .tw{
+                background-color: #f2f2f2; /* Серый фон */
+                padding: 10px; /* Поля вокруг содержимого блока */
+                border-radius: 10px; /* Закругленные углы */
+                margin-top: 10px; /* Отступ сверху */
+            }
+            
+            .col-3 button {
+                border-radius: 5px; /* Закругление углов кнопки */
+                background-color: blue; /* Синий цвет фона кнопки */
+                color: #fff; /* Белый цвет текста кнопки */
+                padding: 10px 20px; /* Отступы внутри кнопки */
+                cursor: pointer; /* Добавляем указатель при наведении курсора */
+                transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+                align-self: flex-end; /* Размещаем кнопку внизу блока */
+                margin-top: 40%;
+            }
+
+            .col-3 button:hover {
+                background-color: #fff; /* Белый цвет фона при наведении */
+                color: #007bff; /* Синий цвет текста при наведении */
+            }
+            
+            .dd {
+                padding: 5%;
+                margin: 1%;
+                box-shadow:0 0px 5px blue;
+            }
+            </style>
+        
+        <a id="openChatButton" class="open-button"><i class="fa-solid fa-robot fa-2xl" style="color: #2f2cf2;"></i></a>
+    <div id="chatContainer" class="chat-container">
+        <div id="chatHeader" class="chat-header">
+            <span id="closeChatButton" class="close-button">Закрыть</span>
+        </div>
+        <div id="chatMessages" class="chat-messages">
+            <!-- Здесь будут сообщения бота и пользователя -->
+        </div>
+        <input type="text" id="userMessage" class="user-message" placeholder="Введите сообщение...">
+        <button id="sendMessageButton" class="send-button">Отправить</button>
+    </div>
+    <script src="script.js"></script>
+        
+        
+<footer class="bg-light text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+        
+        <script>
+            // Обработчик события для кнопки "Добавить в корзину"
+            document.getElementById('addToCartButton').addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Получить информацию о товаре из разметки карточки
+                const productId = 1; // Ваш ID товара
+                const productName = document.querySelector('.name').textContent;
+                const characteristics = document.querySelector('.row > div').innerHTML.trim(); // Получить характеристики
+                const productDescription = "Характеристики: " + characteristics;
+                const productPrice = document.querySelector('.col-3 p').textContent.trim();
+                const productImage = document.getElementById('mainImage').getAttribute('src');
+
+                // Создать объект с информацией о товаре
+                const productData = {
+                    id: productId,
+                    name: productName,
+                    description: productDescription,
+                    price: productPrice,
+                    image: productImage
+                };
+
+                // Сохранить информацию о товаре в localStorage
+                localStorage.setItem('product_' + productId, JSON.stringify(productData));
+
+                // Обновить счетчик товаров в корзине
+                updateCartItemCount();
+            });
+        </script>
+        <script>
+            function updateImage(src) {
+                document.getElementById('mainImage').src = src;
+            }
+        </script>
+        <script src="fff.js"></script>
+        <script type="text/javascript" src="index.js" ></script>
+        <script type="text/javascript" src="response.js" ></script>
+        <script src="https://kit.fontawesome.com/604b5a3c47.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+    
+    
+</html>

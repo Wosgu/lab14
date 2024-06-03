@@ -1,0 +1,166 @@
+.bsbs{
+    margin-top: 10%;
+}
+.content{
+    margin-top: 2.9%;
+    max-width: 100%;
+	max-height: 100%;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.my-carousel{
+    padding: 0;
+    margin-top: 3.9%;
+}
+.my-carousel .carousel-item{
+    display: flex;
+    max-height: 500px;
+}
+.my-carousel .carousel-item umg{
+    object-fit: cover;
+}
+h1{
+    text-align: center;
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+.is{
+    text-align: center;
+    margin: 8%;
+    font-family: 'Roboto', sans-serif;
+}
+/* Product card */
+.product-card {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+	transition: all .3s;
+}
+
+.product-card:hover {
+	box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+
+.product-thumb a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	padding: 20px;
+}
+
+.product-thumb img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product-details {
+	padding: 20px;
+}
+
+.product-details h4 a {
+	font-weight: 500;
+	display: block;
+	height: 60px;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.product-details p {
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: #999;
+	height: 44px;
+	overflow: hidden;
+}
+
+.product-bottom-details {
+	overflow: hidden;
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+}
+
+.product-price {
+	font-size: 18px;
+	color: #ee6e73;
+	font-weight: 600;
+}
+
+.product-price small {
+	color: #ccc;
+	font-weight: 400;
+	text-decoration: line-through;
+	margin-right: 5px;
+}
+
+.product-links a {
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+
+@media (max-width: 1300px) {
+  .my-carousel {
+    margin-top: 6%;    
+  }
+}
+@media (max-width: 780px) {
+  .my-carousel {
+    margin-top: 8.5%;    
+  }
+}
+@media (max-width: 550px) {
+  .my-carousel {
+    margin-top: 11.5%;    
+  }
+}
+
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+
+.close-button, .open-button {
+    cursor: pointer;
+}
+
+.chat-messages {
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.user-message {
+    width: 80%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.send-button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.open-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+

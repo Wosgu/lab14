@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>eBiz</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,500&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary fs-2" href="index.html">eBiz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse me-auto navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Каталог
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Смартфоны</a></li>
+            <li><a class="dropdown-item" href="#">Ноутбуки</a></li>
+            <li><a class="dropdown-item" href="#">Компьютеры</a></li>
+            <li><a class="dropdown-item" href="#">Периферия</a></li>
+            <li><a class="dropdown-item" href="#">Для рабочего места</a></li>
+            <li><a class="dropdown-item" href="#">Аксесуары</a></li>
+            <li><a class="dropdown-item" href="index_search.html">Комплектующие</a></li>
+              
+          </ul>
+        </li>
+        </ul>
+          <ul class="navbar-nav pe-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link hh" href="#"><i class="fa-solid fa-dolly fa-2xl"></i></a>
+        </li>
+                  <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-regular fa-heart fa-2xl"></i></a>
+        </li>
+                  <li class="nav-item">
+        <a class="nav-link" href="basket.html">
+            <i class="fa-solid fa-basket-shopping fa-2xl"></i>
+            <span id="cartItemCount" class="cart-item-count">0</span>
+        </a>
+                  </li>
+                  <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-regular fa-user fa-2xl"></i></a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+        </header>
+        
+        
+        <div class="content">
+        <div class="container">
+  <div class="row">
+    <div class="col-12"><h1 class="is">Комплектующие</h1></div>
+    <div class="col-3">
+        
+        
+        
+
+        
+        <p>Цена от - до</p>
+        <div class="container text-center">
+  <div class="row">
+    <div class="col-5">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHel" value="1">
+    </div>
+      <div class="col-1">_</div>
+    <div class="col-5">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHel" value="99999">
+    </div>
+  </div>
+</div>
+        <hr width="100%" />
+        
+        
+        <p>Срок доставки</p>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                Сегодня
+            </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                Сегодня или завтра
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                До 5 дней
+            </label>
+                </div>
+                <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+                Любое время
+            </label>
+            </div>
+        <hr width="100%" />
+
+        <p>Рейтинг магазина</p>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                От 3
+            </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                От 4
+            </label>
+            </div>
+                <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+            <label class="form-check-label" for="flexCheckDefault">
+                Любой
+            </label>
+            </div>
+        <hr width="100%" />
+        
+        <p>Фирма</p>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                Intel
+            </label>
+            </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                GIGABYTE
+            </label>
+            </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                ASUS
+            </label>
+            </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                MSI
+            </label>
+            </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                HP
+            </label>
+            </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                AMD
+            </label>
+            </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                Acer
+            </label>
+            </div>
+        <hr width="100%" />
+        <p>Состояние товара</p>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                Новый
+            </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+                Уцененный
+            </label>
+            </div>
+        <hr width="100%" />
+        
+                
+        <div id="cartochki">
+    <!-- Содержимое корзины будет отображаться здесь -->
+</div>
+      </div>
+    <div class="col-9"><section class="main-content">
+        <div class="col-12"><a href="index.html">Главная</a><a> / </a><a href="">Комплектующие</a></div><br>
+		<div class="container">
+			<div class="row">
+				
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="1">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/1862611/img_id8895755222336550850.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+                            <h4><a href="#">Thunderobot F23H75"</a></h4>
+							<p>Монитор игровой Thunderobot F23H75</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									$99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="1"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="2">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/5272727/img_id6760769238647584363.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Оперативная память KINGSTON</a></h4>
+							<p>Оперативная память KINGSTON FURY Beast Black DIMM DDR4 16GB (2x8GB) 3200 MHz (KF432C16BBK2/16)</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="2"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="3">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/5129282/img_id2733454934950179302.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="item.html">Солнцезащитные очки</a></h4>
+							<p>Солнцезащитные очки, узкие, оправа: пластик, с защитой от УФ, черный</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="3"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="4">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/901948/img_id5471745912920052894.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Игровой коврик</a></h4>
+							<p>Игровой коврик Red Square Nami XXL (RSQ-40044)</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="4"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card" data-product-id="5">
+						<div class="product-thumb">
+							<a href="#"><img src="https://avatars.mds.yandex.net/get-mpic/4984138/img_id1967775852379300232.jpeg/orig" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="#">Настенные часы</a></h4>
+							<p>Настенные часы с группой Король и Шут, КиШ, Михаил Горшенёв</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									<small>$230.99</small> $99
+								</div>
+								<div class="product-links">
+									<a href="#" class="add-to-cart-button" data-product-id="5"><i class="fas fa-shopping-cart"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+			</div>
+		</div>
+	</section>
+        <div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+        <br>
+      <nav aria-label="Пример навигации по страницам">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Предыдущая" id="prev-page">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Следующая" id="next-page">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+          
+</nav>
+    </div>
+</div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+        <br>
+        <a id="openChatButton" class="open-button"><i class="fa-solid fa-robot fa-2xl" style="color: #2f2cf2;"></i></a>
+    <div id="chatContainer" class="chat-container">
+        <div id="chatHeader" class="chat-header">
+            <span id="closeChatButton" class="close-button">Закрыть</span>
+        </div>
+        <div id="chatMessages" class="chat-messages">
+            <!-- Здесь будут сообщения бота и пользователя -->
+        </div>
+        <input type="text" id="userMessage" class="user-message" placeholder="Введите сообщение...">
+        <button id="sendMessageButton" class="send-button">Отправить</button>
+    </div>
+    <script src="script.js"></script>
+        
+        <script>
+  // Настройки
+const productsPerPage = 12; // Количество товаров на одной странице
+let currentPage = 1; // Текущая страница
+
+// Функция для изменения отображаемых карточек товаров
+function updateProductCards() {
+  const allProductCards = document.querySelectorAll('.product-card');
+  const maxPages = Math.ceil(allProductCards.length / productsPerPage);
+
+  // Определите индексы карточек товаров для текущей страницы
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+
+  // Скройте все карточки товаров
+  allProductCards.forEach(card => {
+    card.style.display = 'none';
+  });
+
+  // Покажите только карточки товаров для текущей страницы
+  for (let i = startIndex; i < endIndex && i < allProductCards.length; i++) {
+    allProductCards[i].style.display = 'block';
+  }
+}
+
+// Функция для обновления пагинации
+function updatePagination() {
+  const allProductCards = document.querySelectorAll('.product-card');
+  const maxPages = Math.ceil(allProductCards.length / productsPerPage);
+
+  // Удалите существующие кнопки страниц
+  const pageList = document.querySelector('.pagination');
+  pageList.innerHTML = '';
+
+  // Добавьте кнопку "Предыдущая"
+  pageList.innerHTML += `
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Предыдущая" id="prev-page">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+  `;
+
+  // Добавьте кнопки для каждой страницы
+  for (let i = 1; i <= maxPages; i++) {
+    pageList.innerHTML += `
+      <li class="page-item">
+        <a class="page-link" href="#">${i}</a>
+      </li>
+    `;
+  }
+
+  // Добавьте кнопку "Следующая"
+  pageList.innerHTML += `
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Следующая" id="next-page">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  `;
+
+  // Обновите обработчики клика для новых кнопок страниц
+  const newPageButtons = document.querySelectorAll('.page-link:not(#prev-page):not(#next-page)');
+  newPageButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      currentPage = index + 1;
+      updateProductCards();
+    });
+  });
+}
+
+// Обработчик клика на кнопку "Предыдущая"
+document.getElementById('prev-page').addEventListener('click', () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updateProductCards();
+  }
+});
+
+// Обработчик клика на кнопку "Следующая"
+document.getElementById('next-page').addEventListener('click', () => {
+  const allProductCards = document.querySelectorAll('.product-card');
+  const maxPages = Math.ceil(allProductCards.length / productsPerPage);
+
+  if (currentPage < maxPages) {
+    currentPage++;
+    updateProductCards();
+  }
+});
+
+// Инициализация: покажите карточки товаров для первой страницы и обновите пагинацию
+updateProductCards();
+updatePagination();
+</script>
+        
+        <script></script>
+        
+        
+<footer class="bg-light text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+        
+        
+        
+    <script>// Обработчик события для кнопки "Добавить в корзину"
+document.querySelectorAll('.add-to-cart-button').forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Получить информацию о товаре из родительской карточки
+        const productCard = button.closest('.product-card');
+        const productId = productCard.getAttribute('data-product-id');
+        const productName = productCard.querySelector('h4').textContent;
+        const productDescription = productCard.querySelector('p').textContent;
+        const productPrice = productCard.querySelector('.product-price').textContent;
+        const productImage = productCard.querySelector('.product-thumb img').getAttribute('src');
+
+        // Создать объект с информацией о товаре
+        const productData = {
+            id: productId,
+            name: productName,
+            description: productDescription,
+            price: productPrice,
+            image: productImage
+        };
+
+        // Сохранить информацию о товаре в localStorage
+        localStorage.setItem('product_' + productId, JSON.stringify(productData));
+
+        // Обновить счетчик товаров в корзине
+        updateCartItemCount();
+    });
+});</script>
+        <script src="fff.js"></script>
+        <script src="https://kit.fontawesome.com/604b5a3c47.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+    
+    
+</html>

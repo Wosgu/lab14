@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя Визитка</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Первый раздел с параллакс-эффектом */
+    .parallax-section {
+      background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614263416_84-p-cherno-belie-kartinki-na-fon-telefona-105.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Второй раздел с параллакс-эффектом */
+    .parallax-section-2 {
+      background-image: url('https://phonoteka.top/uploads/posts/2022-01/1642645923_59-phonoteka-org-p-fon-dlya-storis-temnii-62.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .parallax-section h1 {
+      color: white;
+      font-size: 100px;
+      background: rgba(0, 0, 0, 0.9); /* Полупрозрачный черный фон */
+      padding: 20px;
+    }
+    .parallax-section-2 h1 {
+      color: white;
+      font-size: 100px;
+      background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+      mix-blend-mode: screen;
+    }
+
+    .parallax-section .description {
+      color: white;
+      background: rgba(0, 0, 0, 0.9); /* Полупрозрачный черный фон */
+      padding: 20px;
+    }
+
+    .parallax-section-2 .button {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 24px;
+      text-decoration: none;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    .parallax-section-2 .button:hover {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Первый раздел -->
+<section class="parallax-section ">
+  <div class="container ">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>eBiz</h1>
+        <p class="description">
+          Маркет — чтобы покупать
+          Бонусы, скидки, бесплатная доставка и многое
+          другое прямо на Маркете<br>
+          Маркет — чтобы искать
+          Подробные описания и тысячи отзывов от реальных
+          покупателей в вашем распоряжении<br>
+          Маркет — чтобы сравнивать
+          Вас ждут более 100 миллионов предложений
+          от 20 тысяч магазинов Ищите, выбирайте, покупайте — и всё
+          на eBiz
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Второй раздел -->
+<section class="parallax-section-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>начните покупки прямо сейчас</h1>
+        <a class="button" href="index.html">Перейти в магазин</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
